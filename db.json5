@@ -1,0 +1,64 @@
+{
+    addresses: [],
+    'address-fields': [
+        {
+            id: 'local',
+            street: {
+                label: 'Street',
+                requirement: 'MANDATORY',
+                maxLength: 81
+            },
+            postalCode: {
+                label: 'Postal Code',
+                requirement: 'MANDATORY',
+                maxLength: 10
+            },
+            townName: {
+                label: 'City',
+                requirement: 'MANDATORY',
+                maxLength: 51
+            },
+            country: {
+                label: 'Country',
+                requirement: 'OPTIONAL',
+                disabled: true,
+                value: 'AT'
+            }
+        },
+        {
+            id: 'international',
+            buildingName: {
+                label: 'Building Name',
+                requirement: 'OPTIONAL'
+            },
+            street: {
+                label: 'Street',
+                requirement: 'MANDATORY',
+                maxLength: 85
+            },
+            districtName: {
+                label: 'District',
+                requirement: 'OPTIONAL'
+            },
+            postalCode: {
+                label: 'Postal Code',
+                requirement: 'OPTIONAL',
+                maxLength: 10
+            },
+            townName: {
+                label: 'City',
+                requirement: 'MANDATORY',
+                maxLength: 61
+            },
+            regionName: {
+                label: 'Region',
+                requirement: 'OPTIONAL'
+            },
+            country: {
+                label: 'Country',
+                requirement: 'MANDATORY',
+                maxLength: 2
+            }
+        }
+    ]
+}
