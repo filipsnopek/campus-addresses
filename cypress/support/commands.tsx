@@ -3,6 +3,7 @@
 /// <reference types="../../node_modules/cypress/types/cypress" />
 /// <reference types="../../node_modules/cypress/types/cypress-global-vars" />
 /// <reference types="../../node_modules/cypress/types/cypress-type-helpers" />
+/// <reference types="@testing-library/cypress" />
 
 // ***********************************************
 // This example commands.js shows you how to
@@ -29,3 +30,5 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
+
+import '@testing-library/cypress/add-commands';
