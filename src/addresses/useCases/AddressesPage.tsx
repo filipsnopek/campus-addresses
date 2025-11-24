@@ -121,7 +121,9 @@ export const AddressesPage = () => {
         return (
             <FocusPageLayout>
                 <HeroTitle title="Campus Addresses" />
-                <p className="bg-green-100 p-3 text-xl">{"It's now saved!"}</p>
+                <p role="alert" className="bg-green-100 p-3 text-xl">
+                    {"It's now saved!"}
+                </p>
                 <br />
                 <button
                     onClick={handleAddAddress}
